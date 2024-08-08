@@ -1,0 +1,40 @@
+{
+  "name": "iam-quick-uos-stateless",
+  "version": "0.1.0",
+  "description": "Unity Online Service Stateless Function Framework",
+  "author": {
+    "name": "dualface",
+    "email": "dualface@gmail.com",
+    "url": "https://github.com/dualface/"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dualface/iam-quick-uos-stateless"
+  },
+  "homepage": "https://github.com/dualface/iam-quick-uos-stateless",
+  "keywords": [
+    "unity",
+    "uos"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "gts": "^5.3.1",
+    "typescript": "^5.4.3"
+  }
+}
